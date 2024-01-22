@@ -32,7 +32,7 @@ impl JsonwebtokenTrait for WrapperJWT {
         let token = &self.token;
         let secret = &self.secret;
         let res = decode::<Token>(
-            &token,
+            token,
             &DecodingKey::from_secret(secret.as_ref()),
             &Validation::new(jsonwebtoken::Algorithm::HS256),
         )?;
@@ -42,7 +42,7 @@ impl JsonwebtokenTrait for WrapperJWT {
         let token = &self.token;
         let secret = &self.secret;
         let res = decode::<Token>(
-            &token,
+            token,
             &DecodingKey::from_secret(secret.as_ref()),
             &Validation::new(jsonwebtoken::Algorithm::HS384),
         )?;
@@ -52,7 +52,7 @@ impl JsonwebtokenTrait for WrapperJWT {
         let token = &self.token;
         let secret = &self.secret;
         let res = decode::<Token>(
-            &token,
+            token,
             &DecodingKey::from_secret(secret.as_ref()),
             &Validation::new(jsonwebtoken::Algorithm::HS512),
         )?;

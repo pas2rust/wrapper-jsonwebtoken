@@ -1,8 +1,8 @@
 [package]
 name = "wrapper-jsonwebtoken"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-description = "generate random bytes"
+description = "wrapper"
 authors = ["Pas2Rust <pas2000@proton.me>"]
 homepage = "https://github.com/pas2rust/wrapper-jsonwebtoken"
 repository = "https://github.com/pas2rust/wrapper-jsonwebtoken"
